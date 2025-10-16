@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, Suspense } from "react";
 import { Container } from "@/components/container";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -34,27 +34,29 @@ export default function WorkPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen py-16">
-        <Container>
-          <Reveal className="mb-12">
-            <h1 className="mb-4">Work</h1>
-            <p className="text-text-dim">
-              Portafolio completo de proyectos de maquillaje profesional
-            </p>
-          </Reveal>
+      <Suspense>
+        <main className="min-h-screen py-16">
+          <Container>
+            <Reveal className="mb-12">
+              <h1 className="mb-4">Work</h1>
+              <p className="text-text-dim">
+                Portafolio completo de proyectos de maquillaje profesional
+              </p>
+            </Reveal>
 
-          <Reveal delay={0.1} className="mb-12">
-            <FilterBar
-              categories={categories}
-              activeCategory={activeCategory}
-              onCategoryChange={setActiveCategory}
-              resultCount={filteredProjects.length}
-            />
-          </Reveal>
+            <Reveal delay={0.1} className="mb-12">
+              <FilterBar
+                categories={categories}
+                activeCategory={activeCategory}
+                onCategoryChange={setActiveCategory}
+                resultCount={filteredProjects.length}
+              />
+            </Reveal>
 
-          <MasonryGrid key={activeCategory} projects={filteredProjects} />
-        </Container>
-      </main>
+            <MasonryGrid key={activeCategory} projects={filteredProjects} />
+          </Container>
+        </main>
+      </Suspense>
       <Footer />
     </>
   );
