@@ -1,0 +1,26 @@
+{
+  "slug": "editorial-electric-green",
+  "title": "Verde Eléctrico",
+  "clientOrPublication": "Fucking Young!",
+  "year": 2024,
+  "country": "España",
+  "categories": ["editorial"],
+  "featured": true,
+  "images": [
+    {
+      "src": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/125877582_409754280058231_8695006825834067878_n-sTtlHp1nyVi6ewVUGN7BgSqNEpwWMM.jpg",
+      "width": 900,
+      "height": 1200,
+      "alt": "Maquillaje editorial con delineador gráfico verde eléctrico y piel limpia, línea precisa y pigmento intenso",
+      "focus": "eyes"
+    }
+  ],
+  "credits": [
+    { "role": "photography", "name": "David Chen" },
+    { "role": "hair", "name": "Marina López" },
+    { "role": "styling", "name": "Pablo Ruiz" },
+    { "role": "model", "name": "Nia Thompson" },
+    { "role": "publication", "name": "Fucking Young!" }
+  ],
+  "aboutLook": "Color puro sin mezclas. Trazo único, sin correcciones visibles. Piel sin base pesada para que el verde sea el único protagonista. Precisión técnica en la aplicación."
+}

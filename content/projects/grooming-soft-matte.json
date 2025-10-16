@@ -1,0 +1,26 @@
+{
+  "slug": "grooming-soft-matte",
+  "title": "Mate Suave",
+  "clientOrPublication": "GQ Style",
+  "year": 2023,
+  "country": "México",
+  "categories": ["editorial", "grooming"],
+  "featured": false,
+  "images": [
+    {
+      "src": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/426479068_840992791131289_900721664563515578_n-syjiKajuRPRw9r2LiRMWYo8MdGxMEK.jpeg",
+      "width": 900,
+      "height": 1200,
+      "alt": "Primer plano de grooming masculino con piel mate y textura natural, acabado sin brillo pero no plano",
+      "focus": "skin"
+    }
+  ],
+  "credits": [
+    { "role": "photography", "name": "Ricardo Gómez" },
+    { "role": "hair", "name": "Fernando Silva" },
+    { "role": "styling", "name": "Andrea Morales" },
+    { "role": "model", "name": "Diego Martínez" },
+    { "role": "publication", "name": "GQ Style México" }
+  ],
+  "aboutLook": "Grooming que no se lee como maquillaje. Piel unificada sin borrar textura masculina. Mate sin efecto polvoriento, acabado de segunda piel."
+}

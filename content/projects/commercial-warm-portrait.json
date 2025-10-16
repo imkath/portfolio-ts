@@ -1,0 +1,26 @@
+{
+  "slug": "commercial-warm-portrait",
+  "title": "Retrato Cálido",
+  "clientOrPublication": "Estée Lauder",
+  "year": 2024,
+  "country": "Estados Unidos",
+  "categories": ["commercial"],
+  "featured": false,
+  "images": [
+    {
+      "src": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/399187934_1513243849214984_3884965057670840358_n-ODRL4Ah9LkWaeGGCYjoOG3N2NuZ9RL.jpeg",
+      "width": 900,
+      "height": 1200,
+      "alt": "Retrato comercial cálido con piel radiante y maquillaje natural, tonos dorados en piel morena",
+      "focus": "skin"
+    }
+  ],
+  "credits": [
+    { "role": "photography", "name": "Lisa Chen" },
+    { "role": "hair", "name": "Michael Brown" },
+    { "role": "styling", "name": "Jessica Lee" },
+    { "role": "model", "name": "Issa Rae" },
+    { "role": "brand", "name": "Estée Lauder" }
+  ],
+  "aboutLook": "Tonos cálidos que respetan y realzan la melanina natural. Luminosidad construida desde la preparación de piel. Acabado que se ve saludable, no artificial."
+}

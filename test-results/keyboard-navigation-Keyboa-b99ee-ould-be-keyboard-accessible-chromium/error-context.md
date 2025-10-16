@@ -1,0 +1,76 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+    - img [ref=e8]
+  - alert [ref=e11]: Brillo Natural - Tannia Silva
+  - generic [ref=e12]:
+    - navigation [ref=e13]:
+      - generic [ref=e15]:
+        - link "Tannia Silva" [ref=e16] [cursor=pointer]:
+          - /url: /
+        - list [ref=e17]:
+          - listitem [ref=e18]:
+            - link "Work" [ref=e19] [cursor=pointer]:
+              - /url: /work
+          - listitem [ref=e20]:
+            - link "About" [ref=e21] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e22]:
+            - link "Contact" [ref=e23] [cursor=pointer]:
+              - /url: /contact
+    - main [ref=e24]:
+      - generic [ref=e26]:
+        - generic [ref=e28]:
+          - heading "Brillo Natural" [level=1] [ref=e29]
+          - generic [ref=e30]:
+            - paragraph [ref=e31]: Vogue Beauty
+            - paragraph [ref=e32]: "2024"
+            - paragraph [ref=e33]: México
+          - generic [ref=e34]:
+            - generic [ref=e35]: Beauty
+            - generic [ref=e36]: Editorial
+        - 'button "Abrir imagen 1 en lightbox: Belleza limpia con piel luminosa y brillo sutil en pómulos, textura de piel real con acabado húmedo controlado" [ref=e39]':
+          - img "Belleza limpia con piel luminosa y brillo sutil en pómulos, textura de piel real con acabado húmedo controlado" [ref=e41]
+        - generic [ref=e42]:
+          - heading "Sobre este look" [level=3] [ref=e43]
+          - paragraph [ref=e44]: Piel tratada con hidratación intensa previa. Brillo estratégico en puntos altos del rostro sin saturar. Textura real visible, poros respetados, luminosidad desde dentro.
+        - generic [ref=e46]:
+          - heading "Créditos" [level=3] [ref=e47]
+          - generic [ref=e48]:
+            - generic [ref=e50]:
+              - generic [ref=e51]: "Fotografía: Ana Martínez ·"
+              - generic [ref=e52]: "Cabello: Carlos Vega ·"
+              - generic [ref=e53]: "Styling: Laura Sánchez ·"
+              - generic [ref=e54]: "Modelo: Sofía Reyes ·"
+              - generic [ref=e55]: "Publicación: Vogue Beauty México"
+            - generic [ref=e56]: "Fotografía: Ana Martínez · Cabello: Carlos Vega · Styling: Laura Sánchez · Modelo: Sofía Reyes · Publicación: Vogue Beauty México"
+        - navigation [ref=e57]:
+          - link "Anterior Retrato Cálido" [ref=e58] [cursor=pointer]:
+            - /url: /work/commercial-warm-portrait
+            - img [ref=e59]
+            - generic [ref=e61]:
+              - paragraph [ref=e62]: Anterior
+              - paragraph [ref=e63]: Retrato Cálido
+          - link "Siguiente Verde Eléctrico" [ref=e64] [cursor=pointer]:
+            - /url: /work/editorial-electric-green
+            - generic [ref=e65]:
+              - paragraph [ref=e66]: Siguiente
+              - paragraph [ref=e67]: Verde Eléctrico
+            - img [ref=e68]
+    - contentinfo [ref=e70]:
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - paragraph [ref=e74]:
+              - link "hello@tanniasilva.com" [ref=e75] [cursor=pointer]:
+                - /url: mailto:hello@tanniasilva.com
+            - paragraph [ref=e76]: Santiago, Chile
+          - generic [ref=e77]:
+            - link "Instagram" [ref=e78] [cursor=pointer]:
+              - /url: https://instagram.com/tanniasilva
+            - link "Behance" [ref=e79] [cursor=pointer]:
+              - /url: https://behance.net/tanniasilva
+        - paragraph [ref=e81]: © 2025 Tannia Silva. Todos los derechos reservados.
+```

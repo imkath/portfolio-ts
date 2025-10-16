@@ -1,0 +1,26 @@
+{
+  "slug": "editorial-clean-lines",
+  "title": "Líneas Limpias",
+  "clientOrPublication": "Dazed Beauty",
+  "year": 2023,
+  "country": "Reino Unido",
+  "categories": ["editorial"],
+  "featured": false,
+  "images": [
+    {
+      "src": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/460932547_1913327075856917_25410145764772056_n-G9LVQN5o7VejtK8hpvJYVffO8bLrEe.jpeg",
+      "width": 900,
+      "height": 1200,
+      "alt": "Maquillaje editorial con líneas de contorno limpias y espacio negativo en rostro, geometría facial marcada",
+      "focus": "complexion"
+    }
+  ],
+  "credits": [
+    { "role": "photography", "name": "Emma Wilson" },
+    { "role": "hair", "name": "James Park" },
+    { "role": "styling", "name": "Claire Morgan" },
+    { "role": "model", "name": "Adut Akech" },
+    { "role": "publication", "name": "Dazed Beauty" }
+  ],
+  "aboutLook": "Trabajo de sustracción más que adición. Contorno usado para crear sombras naturales exageradas. Respeto absoluto por la estructura ósea única de cada rostro."
+}

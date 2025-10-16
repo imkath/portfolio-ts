@@ -1,0 +1,27 @@
+{
+  "slug": "commercial-gamers",
+  "title": "Gamers",
+  "clientOrPublication": "PlayStation",
+  "year": 2024,
+  "country": "Estados Unidos",
+  "categories": ["commercial", "film"],
+  "featured": true,
+  "images": [
+    {
+      "src": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/472876871_1667875347443647_8000720552013765964_n-ts6YpNTe2hjmJlZ76fhnJSNFzregmC.jpeg",
+      "width": 900,
+      "height": 1200,
+      "alt": "Retrato comercial de gamer con piel natural y maquillaje sutil para cámara, acabado mate sin brillo",
+      "focus": "skin"
+    }
+  ],
+  "credits": [
+    { "role": "photography", "name": "Marcus Johnson" },
+    { "role": "hair", "name": "Yuki Tanaka" },
+    { "role": "styling", "name": "Alex Rivera" },
+    { "role": "director", "name": "Sarah Kim" },
+    { "role": "dop", "name": "Tom Anderson" },
+    { "role": "brand", "name": "PlayStation" }
+  ],
+  "aboutLook": "Piel preparada para resistir largas jornadas bajo luces de set. Maquillaje invisible que lee perfecto en cámara. Control de brillo sin perder naturalidad."
+}

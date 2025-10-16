@@ -1,0 +1,26 @@
+{
+  "slug": "beauty-skin-shimmer",
+  "title": "Brillo Natural",
+  "clientOrPublication": "Vogue Beauty",
+  "year": 2024,
+  "country": "México",
+  "categories": ["beauty", "editorial"],
+  "featured": true,
+  "images": [
+    {
+      "src": "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/483416425_996928932014770_429129609718930835_n-jsDmnOVzzVbPufWX0Od7QO42oMiHNg.jpeg",
+      "width": 900,
+      "height": 1200,
+      "alt": "Belleza limpia con piel luminosa y brillo sutil en pómulos, textura de piel real con acabado húmedo controlado",
+      "focus": "skin"
+    }
+  ],
+  "credits": [
+    { "role": "photography", "name": "Ana Martínez" },
+    { "role": "hair", "name": "Carlos Vega" },
+    { "role": "styling", "name": "Laura Sánchez" },
+    { "role": "model", "name": "Sofía Reyes" },
+    { "role": "publication", "name": "Vogue Beauty México" }
+  ],
+  "aboutLook": "Piel tratada con hidratación intensa previa. Brillo estratégico en puntos altos del rostro sin saturar. Textura real visible, poros respetados, luminosidad desde dentro."
+}
