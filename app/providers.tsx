@@ -3,6 +3,7 @@
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import type { ReactNode } from "react";
+import { useEffect, useState } from "react";
 
 interface MotionProviderProps {
   children: ReactNode;
@@ -11,6 +12,16 @@ interface MotionProviderProps {
 export function MotionProvider({ children }: MotionProviderProps) {
   const pathname = usePathname();
   const shouldReduceMotion = useReducedMotion();
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    // Siempre forzar visibilidad después de 500ms por si acaso
+    const timeout = setTimeout(() => {
+      setIsVisible(true);
+    }, 500);
+
+    return () => clearTimeout(timeout);
+  }, [pathname]);
 
   const pageVariants = {
     initial: shouldReduceMotion
@@ -31,28 +42,52 @@ export function MotionProvider({ children }: MotionProviderProps) {
   const pageTransition = shouldReduceMotion
     ? { duration: 0 }
     : {
-        duration: 0.3,
-        ease: [0.25, 0.1, 0.25, 1] as const,
+        duration: 0.2,
+        ease: "easeOut" as const,
       };
 
   return (
-    <AnimatePresence
-      mode="wait"
-      initial={false}
-      onExitComplete={() => window.scrollTo(0, 0)}
-    >
-      <motion.div
-        key={pathname}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        variants={pageVariants}
-        transition={pageTransition}
-        className="min-h-screen"
-        style={{ willChange: "opacity" }}
+    <>
+      <AnimatePresence
+        mode="wait"
+        initial={false}
+        onExitComplete={() => {
+          window.scrollTo(0, 0);
+          setIsVisible(true);
+        }}
       >
-        {children}
-      </motion.div>
-    </AnimatePresence>
+        <motion.div
+          key={pathname}
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          variants={pageVariants}
+          transition={pageTransition}
+          className="min-h-screen"
+          style={{
+            opacity: isVisible ? 1 : undefined,
+          }}
+          onAnimationStart={() => setIsVisible(false)}
+          onAnimationComplete={() => setIsVisible(true)}
+        >
+          {children}
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Fallback de emergencia - siempre visible después de 600ms */}
+      <style jsx global>{`
+        body {
+          min-height: 100vh;
+        }
+        @keyframes force-visible {
+          to {
+            opacity: 1 !important;
+          }
+        }
+        body > div {
+          animation: force-visible 0.1s 0.6s forwards;
+        }
+      `}</style>
+    </>
   );
 }
