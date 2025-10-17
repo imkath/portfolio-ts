@@ -31,12 +31,16 @@ export function MotionProvider({ children }: MotionProviderProps) {
   const pageTransition = shouldReduceMotion
     ? { duration: 0 }
     : {
-        duration: 0.4,
-        ease: [0.25, 0.1, 0.25, 1] as const, // Cubic bezier suave y cinematográfico
+        duration: 0.3,
+        ease: [0.25, 0.1, 0.25, 1] as const,
       };
 
   return (
-    <AnimatePresence mode="wait" initial={false}>
+    <AnimatePresence
+      mode="wait"
+      initial={false}
+      onExitComplete={() => window.scrollTo(0, 0)}
+    >
       <motion.div
         key={pathname}
         initial="initial"
@@ -45,6 +49,7 @@ export function MotionProvider({ children }: MotionProviderProps) {
         variants={pageVariants}
         transition={pageTransition}
         className="min-h-screen"
+        style={{ willChange: "opacity" }}
       >
         {children}
       </motion.div>
