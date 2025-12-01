@@ -1,0 +1,152 @@
+/* Custom styles for Payload Admin */
+/* Optimizado para contraste en modo claro y oscuro */
+
+/* ============================================ */
+/* MODO OSCURO (Dark Theme) */
+/* ============================================ */
+
+/* Labels de grupos (Collections, Globals) en sidebar */
+[data-theme="dark"] .nav-group__label,
+[data-theme="dark"] .nav__label {
+  color: #9ca3af !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+/* Links del sidebar */
+[data-theme="dark"] .nav__link,
+[data-theme="dark"] .nav-group .nav__link {
+  color: #e5e7eb !important;
+}
+
+[data-theme="dark"] .nav__link:hover,
+[data-theme="dark"] .nav__link.active {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Labels de campos */
+[data-theme="dark"] .field-label,
+[data-theme="dark"] label {
+  color: #d1d5db !important;
+}
+
+/* Títulos de secciones */
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5 {
+  color: #f3f4f6 !important;
+}
+
+/* Texto secundario */
+[data-theme="dark"] .field-description,
+[data-theme="dark"] .meta {
+  color: #9ca3af !important;
+}
+
+/* Botón Guardar/Primary */
+[data-theme="dark"] .btn--primary,
+[data-theme="dark"] .btn--style-primary,
+[data-theme="dark"] button[type="submit"],
+[data-theme="dark"] #action-save {
+  background-color: #6366f1 !important;
+  color: #ffffff !important;
+  border: none !important;
+  font-weight: 500 !important;
+}
+
+[data-theme="dark"] .btn--primary:hover,
+[data-theme="dark"] .btn--style-primary:hover,
+[data-theme="dark"] button[type="submit"]:hover,
+[data-theme="dark"] #action-save:hover {
+  background-color: #4f46e5 !important;
+}
+
+/* Botón deshabilitado */
+[data-theme="dark"] .btn--disabled,
+[data-theme="dark"] .btn--style-primary.btn--disabled,
+[data-theme="dark"] #action-save:disabled {
+  background-color: #4b5563 !important;
+  color: #9ca3af !important;
+}
+
+/* ============================================ */
+/* MODO CLARO (Light Theme) */
+/* ============================================ */
+
+/* Labels de grupos (Collections, Globals) en sidebar */
+[data-theme="light"] .nav-group__label,
+[data-theme="light"] .nav__label {
+  color: #4b5563 !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+/* Links del sidebar */
+[data-theme="light"] .nav__link,
+[data-theme="light"] .nav-group .nav__link {
+  color: #374151 !important;
+}
+
+[data-theme="light"] .nav__link:hover,
+[data-theme="light"] .nav__link.active {
+  color: #111827 !important;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Labels de campos */
+[data-theme="light"] .field-label,
+[data-theme="light"] label {
+  color: #374151 !important;
+}
+
+/* Títulos de secciones */
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5 {
+  color: #111827 !important;
+}
+
+/* Texto secundario */
+[data-theme="light"] .field-description,
+[data-theme="light"] .meta {
+  color: #6b7280 !important;
+}
+
+/* Botón Guardar/Primary */
+[data-theme="light"] .btn--primary,
+[data-theme="light"] .btn--style-primary,
+[data-theme="light"] button[type="submit"],
+[data-theme="light"] #action-save {
+  background-color: #4f46e5 !important;
+  color: #ffffff !important;
+  border: none !important;
+  font-weight: 500 !important;
+}
+
+[data-theme="light"] .btn--primary:hover,
+[data-theme="light"] .btn--style-primary:hover,
+[data-theme="light"] button[type="submit"]:hover,
+[data-theme="light"] #action-save:hover {
+  background-color: #4338ca !important;
+}
+
+/* Botón deshabilitado */
+[data-theme="light"] .btn--disabled,
+[data-theme="light"] .btn--style-primary.btn--disabled,
+[data-theme="light"] #action-save:disabled {
+  background-color: #d1d5db !important;
+  color: #6b7280 !important;
+}
+
+/* TEST - Verificar que CSS se está cargando */
+/* Si esto funciona, el fondo del nav será visible */
+.nav {
+  border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
+}

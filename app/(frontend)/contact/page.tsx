@@ -27,7 +27,7 @@ export default function ContactPage() {
 
     // Check honeypot
     if (formData.honeypot) {
-      console.log("[v0] Honeypot triggered, likely spam");
+      console.log("Honeypot triggered, likely spam");
       return;
     }
 
@@ -41,7 +41,7 @@ export default function ContactPage() {
 
     // Simulate form submission
     setTimeout(() => {
-      console.log("[v0] Form submitted:", {
+      console.log("Form submitted:", {
         name: formData.name,
         email: formData.email,
         message: formData.message,

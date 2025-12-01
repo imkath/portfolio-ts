@@ -4,7 +4,7 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { VisuallyHidden } from "@/components/ui/visually-hidden";
 import Image from "next/image";
 import type { ImageItem } from "@/src/types";
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { trackImageOpen } from "@/src/lib/analytics";
 
@@ -29,6 +29,14 @@ export function Lightbox({
   const announceRef = useRef<HTMLDivElement>(null);
   const previousIndexRef = useRef(currentIndex);
   const hasTrackedOpen = useRef(false);
+
+  const goToNext = useCallback(() => {
+    onNavigate((currentIndex + 1) % images.length);
+  }, [currentIndex, images.length, onNavigate]);
+
+  const goToPrevious = useCallback(() => {
+    onNavigate((currentIndex - 1 + images.length) % images.length);
+  }, [currentIndex, images.length, onNavigate]);
 
   // Track lightbox open
   useEffect(() => {
@@ -73,7 +81,7 @@ export function Lightbox({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isOpen, currentIndex, images.length]);
+  }, [isOpen, goToNext, goToPrevious, onClose]);
 
   // Preload adjacent images
   useEffect(() => {
@@ -99,14 +107,6 @@ export function Lightbox({
       previousIndexRef.current = currentIndex;
     }
   }, [currentIndex, isOpen]);
-
-  const goToNext = () => {
-    onNavigate((currentIndex + 1) % images.length);
-  };
-
-  const goToPrevious = () => {
-    onNavigate((currentIndex - 1 + images.length) % images.length);
-  };
 
   if (!currentImage) return null;
 

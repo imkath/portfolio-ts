@@ -464,4 +464,11 @@
   .scroll-smooth::-webkit-scrollbar {
     display: none;
   }
+
+  /* Vertical text for sidebar navigation */
+  .text-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+  }
 }

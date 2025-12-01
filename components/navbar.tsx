@@ -17,7 +17,10 @@ export function Navbar() {
   const [isLogoHovered, setIsLogoHovered] = useState(false);
 
   return (
-    <nav className="fixed left-0 top-0 z-50 flex h-screen w-20 flex-col items-center justify-between border-r border-line bg-bg/95 py-8 backdrop-blur-sm md:w-24">
+    <nav
+      aria-label="Navegación principal"
+      className="fixed left-0 top-0 z-50 flex h-screen w-20 flex-col items-center justify-between border-r border-line bg-bg/95 py-8 backdrop-blur-sm md:w-24"
+    >
       {/* Film strip decoration at the left edge */}
       <div className="absolute bottom-0 left-0 top-0 w-px bg-gradient-to-b from-transparent via-accent-2/20 to-transparent" />
 
@@ -86,14 +89,7 @@ export function Navbar() {
                 )}
               >
                 {/* Vertical text */}
-                <span
-                  className="text-xs uppercase tracking-widest"
-                  style={{
-                    writingMode: "vertical-rl",
-                    textOrientation: "mixed",
-                    transform: "rotate(180deg)",
-                  }}
-                >
+                <span className="text-vertical text-xs uppercase tracking-widest">
                   {item.label}
                 </span>
 

@@ -17,15 +17,16 @@ import { generateProjectJsonLd, generateOgImageUrl } from "@/src/lib/seo";
 import type { Metadata } from "next";
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateMetadata({
   params,
 }: ProjectPageProps): Promise<Metadata> {
-  const project = getProjectBySlug(params.slug);
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
 
   if (!project) {
     return {
@@ -53,7 +54,7 @@ export async function generateMetadata({
     openGraph: {
       title,
       description,
-      url: `https://tanniasilva.com/work/${params.slug}`,
+      url: `https://tanniasilva.com/work/${slug}`,
       siteName: "Tannia Silva",
       locale: "es_CL",
       type: "article",
@@ -76,15 +77,16 @@ export async function generateMetadata({
   };
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = getProjectBySlug(params.slug);
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params;
+  const project = getProjectBySlug(slug);
 
   if (!project) {
     notFound();
   }
 
-  const nextProject = getNextProject(params.slug);
-  const previousProject = getPreviousProject(params.slug);
+  const nextProject = getNextProject(slug);
+  const previousProject = getPreviousProject(slug);
   const projectJsonLd = generateProjectJsonLd(project);
 
   return (

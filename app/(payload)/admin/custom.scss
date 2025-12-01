@@ -1,0 +1,278 @@
+// Custom styles for Payload Admin
+// Optimizado para contraste en modo claro y oscuro
+
+// ============================================
+// MODO OSCURO (Dark Theme)
+// ============================================
+[data-theme="dark"] {
+  // ----- SIDEBAR -----
+  // Labels de grupos (Collections, Globals)
+  .nav-group__label,
+  .nav__label {
+    color: #9ca3af !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+
+  // Links del sidebar
+  .nav__link,
+  .nav-group .nav__link {
+    color: #e5e7eb !important;
+
+    &:hover,
+    &.active {
+      color: #ffffff !important;
+      background-color: rgba(255, 255, 255, 0.05) !important;
+    }
+  }
+
+  // ----- FORMULARIOS -----
+  // Labels de campos
+  .field-label,
+  .field-type label,
+  .radio-input label,
+  .checkbox-input label,
+  .select-field label,
+  .text-field label,
+  .textarea-field label,
+  .group-field__title,
+  .array-field__header label,
+  .blocks-field__header label {
+    color: #d1d5db !important;
+  }
+
+  // Títulos de secciones y grupos
+  h2, h3, h4, h5,
+  .group-header,
+  .group-header__title,
+  .section-title {
+    color: #f3f4f6 !important;
+  }
+
+  // Texto descriptivo y secundario
+  .field-description,
+  .field-type .description,
+  .meta,
+  .upload__meta,
+  .cell-id {
+    color: #9ca3af !important;
+  }
+
+  // Placeholders y texto de ayuda
+  ::placeholder {
+    color: #6b7280 !important;
+  }
+
+  // ----- TABLAS Y LISTAS -----
+  .table th,
+  .table-header,
+  .list-header {
+    color: #d1d5db !important;
+  }
+
+  .table td,
+  .table-cell {
+    color: #e5e7eb !important;
+  }
+
+  // ----- CARDS Y PANELES -----
+  .card-header,
+  .card-title,
+  .document-header__title {
+    color: #f3f4f6 !important;
+  }
+
+  // ----- NAVEGACIÓN SUPERIOR -----
+  .step-nav,
+  .step-nav a,
+  .breadcrumb {
+    color: #d1d5db !important;
+
+    &:hover {
+      color: #ffffff !important;
+    }
+  }
+
+  // ----- BOTONES SECUNDARIOS -----
+  .btn--secondary,
+  .btn--icon {
+    color: #d1d5db !important;
+    border-color: #4b5563 !important;
+
+    &:hover {
+      color: #ffffff !important;
+      border-color: #6b7280 !important;
+    }
+  }
+
+  // ----- TABS -----
+  .tabs-field__tab-button {
+    color: #9ca3af !important;
+
+    &.active,
+    &:hover {
+      color: #ffffff !important;
+    }
+  }
+
+  // ----- BOTÓN GUARDAR (Primary) -----
+  .btn--primary,
+  button[type="submit"],
+  .form-submit .btn,
+  .save-draft,
+  .publish {
+    background-color: #6366f1 !important;
+    color: #ffffff !important;
+    border: none !important;
+    font-weight: 500 !important;
+
+    &:hover {
+      background-color: #4f46e5 !important;
+    }
+
+    &:disabled {
+      background-color: #4b5563 !important;
+      color: #9ca3af !important;
+    }
+  }
+}
+
+// ============================================
+// MODO CLARO (Light Theme)
+// ============================================
+[data-theme="light"] {
+  // ----- SIDEBAR -----
+  // Labels de grupos (Collections, Globals)
+  .nav-group__label,
+  .nav__label {
+    color: #4b5563 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+
+  // Links del sidebar
+  .nav__link,
+  .nav-group .nav__link {
+    color: #374151 !important;
+
+    &:hover,
+    &.active {
+      color: #111827 !important;
+      background-color: rgba(0, 0, 0, 0.05) !important;
+    }
+  }
+
+  // ----- FORMULARIOS -----
+  // Labels de campos
+  .field-label,
+  .field-type label,
+  .radio-input label,
+  .checkbox-input label,
+  .select-field label,
+  .text-field label,
+  .textarea-field label,
+  .group-field__title,
+  .array-field__header label,
+  .blocks-field__header label {
+    color: #374151 !important;
+  }
+
+  // Títulos de secciones y grupos
+  h2, h3, h4, h5,
+  .group-header,
+  .group-header__title,
+  .section-title {
+    color: #111827 !important;
+  }
+
+  // Texto descriptivo y secundario
+  .field-description,
+  .field-type .description,
+  .meta,
+  .upload__meta,
+  .cell-id {
+    color: #6b7280 !important;
+  }
+
+  // Placeholders y texto de ayuda
+  ::placeholder {
+    color: #9ca3af !important;
+  }
+
+  // ----- TABLAS Y LISTAS -----
+  .table th,
+  .table-header,
+  .list-header {
+    color: #374151 !important;
+  }
+
+  .table td,
+  .table-cell {
+    color: #1f2937 !important;
+  }
+
+  // ----- CARDS Y PANELES -----
+  .card-header,
+  .card-title,
+  .document-header__title {
+    color: #111827 !important;
+  }
+
+  // ----- NAVEGACIÓN SUPERIOR -----
+  .step-nav,
+  .step-nav a,
+  .breadcrumb {
+    color: #4b5563 !important;
+
+    &:hover {
+      color: #111827 !important;
+    }
+  }
+
+  // ----- BOTONES SECUNDARIOS -----
+  .btn--secondary,
+  .btn--icon {
+    color: #374151 !important;
+    border-color: #d1d5db !important;
+
+    &:hover {
+      color: #111827 !important;
+      border-color: #9ca3af !important;
+    }
+  }
+
+  // ----- TABS -----
+  .tabs-field__tab-button {
+    color: #6b7280 !important;
+
+    &.active,
+    &:hover {
+      color: #111827 !important;
+    }
+  }
+
+  // ----- BOTÓN GUARDAR (Primary) -----
+  .btn--primary,
+  button[type="submit"],
+  .form-submit .btn,
+  .save-draft,
+  .publish {
+    background-color: #4f46e5 !important;
+    color: #ffffff !important;
+    border: none !important;
+    font-weight: 500 !important;
+
+    &:hover {
+      background-color: #4338ca !important;
+    }
+
+    &:disabled {
+      background-color: #d1d5db !important;
+      color: #6b7280 !important;
+    }
+  }
+}
